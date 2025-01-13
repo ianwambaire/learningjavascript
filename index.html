@@ -93,6 +93,19 @@
         }
         document.getElementById("object").innerHTML=employees.cars.car1;
     </script>
+    <!--JS object Methods-->
+    <p id="objects"></p>
+    <script>
+        const person={
+            Firstname:"Ian",
+            Lastname:"Nganga",
+            age:"20",
+            Fullname: function(){
+                return this.Firstname +""+this.Lastname;
+            }
+        }
+        document.getElementById("objects").innerHTML="My Fullname is:"+ person.Fullname();
+    </script>
 
 </body>
 </html>
