@@ -95,6 +95,7 @@
     </script>
     <!--JS object Methods-->
     <p id="objects"></p>
+    <p id="objectss"></p>
     <script>
         const person={
             Firstname:"Ian",
@@ -105,6 +106,14 @@
             }
         }
         document.getElementById("objects").innerHTML="My Fullname is:"+ person.Fullname();
+        //accessing the method
+        //do not forget the bracket
+        //adding a new mwthod to an object
+        person.fullinfo=function(){
+            return this.Firstname +" "+ this.Lastname +" "+"and my age is:"+" "+ this.age;
+        }
+        document.getElementById("objectss").innerHTML="My full name is: "+person.fullinfo();
+
     </script>
 
 </body>
