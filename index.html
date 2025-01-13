@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Js in the head-->
+    <script>
+        function myfunction(){
+        document.getElementById("sec").innerHTML="Button clicked";
+    }
+    </script>
 </head>
 <body>
     <h1>Learning javascript</h1>
@@ -11,5 +17,7 @@
     <script>
         document.getElementById("first").innerHTML="This will be displayed";
     </script>
+    <p id="sec">This is the sign up page</p>
+    <button type="button" onclick="myfunction()">Sign up</button>
 </body>
 </html>
