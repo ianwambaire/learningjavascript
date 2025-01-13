@@ -68,6 +68,7 @@
     <p id="obj"></p>
     <p id="obje"></p>
     <p id="objec"></p>
+    <p id="object"></p>
     <script>
         const fruits={}
         fruits.type="Fresh";
@@ -77,9 +78,20 @@
         clothes.brand="vogue";//adding a new property
         document.getElementById("obj").innerHTML=fruits.type;
         document.getElementById("obje").innerHTML=clothes.type;
-        //deleting a property
+        //deleting a property and the value
         delete clothes.type;
         document.getElementById("objec").innerHTML=clothes.type;
+        //nested objects
+        const employees={
+            name: "Ian",
+            age:"nganga",
+            cars: {
+                car1: "harrier",
+                car2: "mazda",
+                car3: "toyota"
+            }
+        }
+        document.getElementById("object").innerHTML=employees.cars.car1;
     </script>
 
 </body>
