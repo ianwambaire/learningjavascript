@@ -58,6 +58,25 @@
         let result=secofunction(2,3);
         document.getElementById("functions").innerHTML=result;
     </script>
+    <!--js objects-->
+    <p id="ob">objects basics</p>
+    <script>
+        const car={type: "mercedes", model:"S class", color:"black"}
+        document.getElementById("ob").innerHTML="The car type is:"+ car.type+"";
+    </script>
+    <!--To create a new object you can choose to use a new keyword or calibrases-->
+    <p id="obj"></p>
+    <p id="obje"></p>
+    <script>
+        const fruits={}
+        fruits.type="Fresh";
+        fruits.place="market";
+        const clothes=new Object()//O in Object is uppercase
+        clothes.type="cotton";
+        clothes.brand="vogue";
+        document.getElementById("obj").innerHTML=fruits.type;
+        document.getElementById("obje").innerHTML=clothes.type;
+    </script>
 
 </body>
 </html>
