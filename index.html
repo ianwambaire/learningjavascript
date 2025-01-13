@@ -43,12 +43,21 @@
     <!---Assignment operators-->
     <p id="Assignmentoperators"></p>
     <script>
-        let a,b,c;
+        let a,b;
         a=2;
         b=3;
         a+=b;
         b**=a;
         document.getElementById("Assignmentoperators").innerHTML="The value of a is:"+ a + " "+ "and b is: "+ b+ "";
     </script>
+    <p id="functions">Call a function which performs a calculation and returns the result:</p>
+    <script>
+        function secofunction(a,b){
+            return a*b;
+        }
+        let result=secofunction(2,3);
+        document.getElementById("functions").innerHTML=result;
+    </script>
+
 </body>
 </html>
