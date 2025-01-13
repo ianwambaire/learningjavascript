@@ -67,15 +67,19 @@
     <!--To create a new object you can choose to use a new keyword or calibrases-->
     <p id="obj"></p>
     <p id="obje"></p>
+    <p id="objec"></p>
     <script>
         const fruits={}
         fruits.type="Fresh";
         fruits.place="market";
         const clothes=new Object()//O in Object is uppercase
         clothes.type="cotton";
-        clothes.brand="vogue";
+        clothes.brand="vogue";//adding a new property
         document.getElementById("obj").innerHTML=fruits.type;
         document.getElementById("obje").innerHTML=clothes.type;
+        //deleting a property
+        delete clothes.type;
+        document.getElementById("objec").innerHTML=clothes.type;
     </script>
 
 </body>
