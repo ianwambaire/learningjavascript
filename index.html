@@ -19,5 +19,16 @@
     </script>
     <p id="sec">This is the sign up page</p>
     <button type="button" onclick="myfunction()">Sign up</button>
+    <!--javascript in the body-->
+    <p id="seco">leaning to have a function in the body</p>
+    <button type="button" onclick="secfunction()">Click me</button>
+    <script>
+        function secfunction(){
+            document.getElementById("seco").innerHTML="I have learnt how to have js in the body";
+        }
+    </script>
+    <p id="secon">Learning how to use external js files</p>
+    <button type="button" onclick="externalfunction()"> Click me </button>
+    <script src="myscript.js"></script>
 </body>
 </html>
