@@ -130,6 +130,7 @@
     <!---Javascript constructor functions-->
     <p id="di"></p>
     <p id="dis"></p>
+    <p id="disp"></p>
     <script>
         //constructor function for school object
         //constructor function name first letter should be in uppercase
@@ -145,6 +146,10 @@
         document.getElementById("dis").innerHTML="The shool name is:  "+ highschool.name+"  and it is a: "+highschool.type+" "+highschool.faculty;
         //you cannot add a new property to a constructor
         //you can add a property to an object
+        //to add a new property to a constructor you must add it to the constructor function prototytpe
+        School.prototype.region="Kenyan";
+        document.getElementById("disp").innerHTML="The school is: "+ university.region;
+        School.nationality="Kenyan";//will not work
     </script>
     
 
