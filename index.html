@@ -115,6 +115,19 @@
         document.getElementById("objectss").innerHTML="My full name is: "+person.fullinfo();
 
     </script>
+    <!--Dispalying objects-->
+    <p id="d"></p>
+    <script>
+        //using JSON.STRINGiFY()
+        const school={
+            name: "strathmore",
+            faculty: "SCES",
+            type: "private"
+        }
+        //display the string
+        document.getElementById("d").innerHTML=JSON.stringify(school);
+    </script>
+    
 
 </body>
 </html>
