@@ -131,6 +131,8 @@
     <p id="di"></p>
     <p id="dis"></p>
     <p id="disp"></p>
+    <p id="displ"></p>
+    <p id="displa"></p>
     <script>
         //constructor function for school object
         //constructor function name first letter should be in uppercase
@@ -138,6 +140,10 @@
             this.name=schoolName;
             this.faculty=schoolFaculty;
             this.type=schoolType;
+            //constructor methods
+            this.fullinfo=function(){
+                return this.name +" "+ this.faculty+" "+ this.type;
+            }
         }
         //create a school object
         const university = new School("strathmore","SCES","private");
@@ -150,6 +156,15 @@
         School.prototype.region="Kenyan";
         document.getElementById("disp").innerHTML="The school is: "+ university.region;
         School.nationality="Kenyan";//will not work
+        //Display the constructor method
+        document.getElementById("displ").innerHTML="The school full information is: "+university.fullinfo();//dont forget brackets
+        //adding a method to a constructor
+        School.prototype.changeName=function(type){
+            this.type=type;
+        }
+        //change the type
+        university.changeName("International");
+        document.getElementById("displa").innerHTML="The school is: "+ university.type;
     </script>
     
 
