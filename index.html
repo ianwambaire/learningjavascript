@@ -127,6 +127,25 @@
         //display the string
         document.getElementById("d").innerHTML=JSON.stringify(school);
     </script>
+    <!---Javascript constructor functions-->
+    <p id="di"></p>
+    <p id="dis"></p>
+    <script>
+        //constructor function for school object
+        //constructor function name first letter should be in uppercase
+        function School(schoolName,schoolFaculty,schoolType){
+            this.name=schoolName;
+            this.faculty=schoolFaculty;
+            this.type=schoolType;
+        }
+        //create a school object
+        const university = new School("strathmore","SCES","private");
+        const highschool= new School("Muranga","Boys school"," Public")
+        document.getElementById("di").innerHTML="The university name is:  "+ university.name+"  and the faculty is:  "+university.faculty;
+        document.getElementById("dis").innerHTML="The shool name is:  "+ highschool.name+"  and it is a: "+highschool.type+" "+highschool.faculty;
+        //you cannot add a new property to a constructor
+        //you can add a property to an object
+    </script>
     
 
 </body>
