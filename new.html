@@ -13,7 +13,11 @@
     <p id="fun"></p>
     <p id="func"></p>
     <p id="funct"></p>
+    <p id="functi"></p>
+    <p id="functio"></p>
+    <p id="function"></p>
     <script>
+        //1)function declaration
         let x=multiplication(3,2);
         document.getElementById("f").innerHTML=x;
         function multiplication(a,b){
@@ -33,6 +37,15 @@
         const j=(k,l)=>{return k*l};
         document.getElementById("funct").innerHTML=j(3,4);
     </script>
+    <!--There are 3 ways of declaring a function-->
+    <script>
+        //1)Function declaration
+        function greeting(name){
+            return `Hello, ${name}`;
+        }
+        document.getElementById("functi").innerHTML=greeting("Ïan");
+    </script>
+
 
 </body>
 </html>
