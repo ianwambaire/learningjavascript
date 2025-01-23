@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---Leaning javascript functions-->
+    <!---How to declare a function-->
+    <p id="f"></p>
+    <p id="fu"></p>
+    <p id="fun"></p>
+    <p id="func"></p>
+    <script>
+        let x=multiplication(3,2);
+        document.getElementById("f").innerHTML=x;
+        function multiplication(a,b){
+            return a*b;
+        }
+        //a function can be stored in a variable
+        const y= function addition(c,d){return c+d};
+        document.getElementById("fu").innerHTML=y(2,3);
+        //using the js built in constructor Function()
+        const substraction=new Function("e","f","return e-f");
+        document.getElementById("fun").innerHTML=substraction(5,3);
+        //Arrow functions
+        //Arrow functions do not need a Function keyword or return or the curly braces
+        const g=(h,i)
+    </script>
+
+</body>
+</html>
