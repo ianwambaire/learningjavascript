@@ -12,6 +12,7 @@
     <p id="fun"></p>
     <script>
         //js for loop
+        //Use for loop in arrays when the order is important
         const cars=["BMW","MERCEDES","SWIFT","SUZUKI"];
         let text="";
         for(let i=0;i<cars.length;i++){
@@ -30,6 +31,12 @@
          }
          document.getElementById("fu").innerHTML=writing;
          //js For in loop in arrays
+         //When the order is important do not use a for in loop over arrays
+         let learn="";
+         for(let y in cars){
+            learn+=cars[y]+" ";
+         }
+         document.getElementById("fun").innerHTML=learn;
     </script>
 </body>
 </html>
