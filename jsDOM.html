@@ -10,7 +10,8 @@
     <p id="f">This is fun</p>
     <img id="image" src="pexels-thirdman-5327921.jpg" alt="smiley face" width="100px" height="50px">
     <p id="fu"></p>
-    <p id="fun"></p>
+    <div id="container"></div>
+    <p id="fun">I am getting super tired</p>
     <p id="func"></p>
     <p id="funct"></p>
     <p id="functi"></p>
@@ -24,6 +25,11 @@
         document.getElementById("image").src="good.jpg";//give the image tag an id
         //dynamic HTML content
         document.getElementById("fu").innerHTML="The date is: "+ Date();
+        //Never use document.write() after the document is loaded. It will overwrite the document.
+        //changing HTML Structure
+        const container=document.getElementById("container");
+        container.innerHTML="<p>We have added a paragraph</p>";
+        //
     </script>
 </body>
 </html>
