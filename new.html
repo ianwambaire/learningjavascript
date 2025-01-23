@@ -30,7 +30,7 @@
         //using the js built in constructor Function()
         const substraction=new Function("e","f","return e-f");
         document.getElementById("fun").innerHTML=substraction(5,3);
-        //Arrow functions
+        //3)Arrow functions
         //Arrow functions do not need a Function keyword or return or the curly braces
         const g=(h,i)=>h+=i;
         document.getElementById("func").innerHTML=g(2,1);
@@ -50,6 +50,10 @@
             return a+b;
         }
         document.getElementById("functio").innerHTML=add(4,3);
+        //3)Arrow functions
+        const sum=(c,d)=>{return c+d};
+        document.getElementById("function").innerHTML=sum(2,3);
+
     </script>
 
 
