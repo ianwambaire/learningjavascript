@@ -10,6 +10,12 @@
     <p id="f"></p>
     <p id="fu"></p>
     <p id="fun"></p>
+    <p id="func"></p>
+    <p id="funct"></p>
+    <p id="functi"></p>
+    <p id="functio"></p>
+    <p id="function"></p>
+    <p id="functions"></p>
     <script>
         //js for loop
         //Use for loop in arrays when the order is important
@@ -37,6 +43,13 @@
             learn+=cars[y]+" ";
          }
          document.getElementById("fun").innerHTML=learn;
+         //js for of loop
+         //use for of loop when the order is important
+         let learning="";
+         for(let z of cars){
+            learning+=z+"<br>";//different 
+         }
+         document.getElementById("func").innerHTML=learning;
     </script>
 </body>
 </html>
