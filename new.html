@@ -24,6 +24,7 @@
             return a*b;
         }
         //a function can be stored in a variable
+        //2)Function expression
         const y= function addition(c,d){return c+d};
         document.getElementById("fu").innerHTML=y(2,3);
         //using the js built in constructor Function()
@@ -44,6 +45,11 @@
             return `Hello, ${name}`;
         }
         document.getElementById("functi").innerHTML=greeting("Ïan");
+        //2)Function expression
+        const add= function(a,b){
+            return a+b;
+        }
+        document.getElementById("functio").innerHTML=add(4,3);
     </script>
 
 
