@@ -9,6 +9,8 @@
     <!--Leaning JS DOM-->
     <p id="f">This is fun</p>
     <img id="image" src="pexels-thirdman-5327921.jpg" alt="smiley face" width="100px" height="50px">
+    <img id="img" src="good.jpg" alt="smiley face" width="100px" height="50px">
+
     <p id="fu"></p>
     <div id="container"></div>
     <p id="fun">I am getting super tired</p>
@@ -29,7 +31,10 @@
         //changing HTML Structure
         const container=document.getElementById("container");
         container.innerHTML="<p>We have added a paragraph</p>";
-        //
+        //Adding or modyfing attributes
+        const img=document.getElementById("img");
+        img.setAttribute("src","pexels-thirdman-5327921.jpg");
+        //Use setAttribute to add or update attributes.
     </script>
 </body>
 </html>
