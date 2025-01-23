@@ -12,6 +12,7 @@
     <p id="fu"></p>
     <p id="fun"></p>
     <p id="func"></p>
+    <p id="funct"></p>
     <script>
         let x=multiplication(3,2);
         document.getElementById("f").innerHTML=x;
@@ -26,7 +27,11 @@
         document.getElementById("fun").innerHTML=substraction(5,3);
         //Arrow functions
         //Arrow functions do not need a Function keyword or return or the curly braces
-        const g=(h,i)
+        const g=(h,i)=>h+=i;
+        document.getElementById("func").innerHTML=g(2,1);
+        //or a better way for Arrow functions
+        const j=(k,l)=>{return k*l};
+        document.getElementById("funct").innerHTML=j(3,4);
     </script>
 
 </body>
