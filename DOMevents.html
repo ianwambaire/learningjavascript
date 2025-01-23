@@ -9,9 +9,20 @@
 <body>
     <!--Clicking on an element-->
     <h1 onclick="this.innerHTML='yeah its done'">Leaning js events</h1>
+    <!--using a function -->
+    <h2 onclick="ChnageText(this)">I want to change this text</h2>
+    <!--Assigning an onclick event to a button element-->
+    <button onclick="ShowDate()">CLICK to show Date:</button>
     <script>
+        function ChnageText(id){
+            id.innerHTML="oops";
+        }
+        function ShowDate(){
+            document.getElementById("e").innerHTML=Date();
+        }
     
 
     </script>
+    <p id="e"></p>
 </body>
 </html>
