@@ -19,8 +19,8 @@
     <script>
         function mycalculation(){
             let result;
-            firstnumber=prompt("Enter the first number: ","");
-            secondnumber=prompt("Enter the second number: ","");
+            firstnumber=parseFloat(prompt("Enter the first number: ",""));
+            secondnumber=parseFloat(prompt("Enter the second number: ",""));
             let operation=prompt("Choose an operation:","*/-+");
             switch(operation){
                 case "*":
@@ -43,6 +43,42 @@
 
         }
     </script>
+    <p id="pro"></p>
+    <button onclick="othercalculation()">Click her to perform better calculation</button>
+    <script>
+        function othercalculation(){
+            let result;
+            const firstnumber=parseFloat(prompt("Enter the first number: ",""));
+            const secondnumber=parseFloat(prompt("Enter the second number: ",""));//convert the strings to float
+            //validate the numbers
+            if(isNaN(firstnumber)||isNaN(secondnumber)){
+                document.getElementById("pro").innerHTML="Please enter valid numbers";
+                return;
+            }
+            let operation=prompt("Choose an operation:","*/-+");
+            switch(operation){
+                case "*":
+                    result=firstnumber*secondnumber;
+                    break;
+                case "+":
+                    result=firstnumber + secondnumber;
+                    break;
+                case "-":
+                    result=firstnumber-secondnumber;
+                    break;
+                case "/":
+                    result=firstnumber/secondnumber;
+                    break;
+                default:
+                    result="Invalid operation";
+                    return;
+            }
+            document.getElementById("pro").innerHTML=result;
+
+
+        }
+    </script>
+
     
 </body>
 </html>
