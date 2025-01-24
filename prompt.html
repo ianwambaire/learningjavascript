@@ -18,8 +18,28 @@
     <button onclick="mycalculation()">Click here to perform calculations</button>
     <script>
         function mycalculation(){
-            firstnumber=prompt("Enter the first number: ","")
-            secondnumber=prompt("Enter the second number: ","")
+            let result;
+            firstnumber=prompt("Enter the first number: ","");
+            secondnumber=prompt("Enter the second number: ","");
+            let operation=prompt("Choose an operation:","*/-+");
+            switch(operation){
+                case "*":
+                    result=firstnumber*secondnumber;
+                    break;
+                case "+":
+                    result=firstnumber+secondnumber;
+                    break;
+                case "-":
+                    result=firstnumber-secondnumber;
+                    break;
+                case "/":
+                    result=firstnumber/secondnumber;
+                    break;
+                default:
+                    result="Invalid operation";
+            }
+            document.getElementById("pr").innerHTML=result;
+
 
         }
     </script>
