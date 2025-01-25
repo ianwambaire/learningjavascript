@@ -85,10 +85,10 @@
     <p id="sliderText" style="font-size: 20px;">Adjust my size!</p>
     <script>
       const slider = document.getElementById("fontSlider");
-      const text = document.getElementById("sliderText");
+      const othertext = document.getElementById("sliderText");
     
       slider.oninput = function () {
-        text.style.fontSize = `${slider.value}px`;
+        othertext.style.fontSize = `${slider.value}px`;
       };
     </script>
     <p id="e"></p>
