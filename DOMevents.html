@@ -36,6 +36,19 @@
          newbutton.addEventListener('click', () => {
             alert('Button clicked!');
              });
+             
+    </script>
+    <p id="hoverText">Hover over this text to highlight it!</p>
+    <script>
+      const text = document.getElementById("hoverText");
+      text.onmouseover = function () {
+        text.style.color = "red";
+        text.style.fontWeight = "bold";
+      };
+      text.onmouseout = function () {
+        text.style.color = "black";
+        text.style.fontWeight = "normal";
+      };
     </script>
     <p id="e"></p>
 </body>
