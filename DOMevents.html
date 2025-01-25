@@ -17,7 +17,8 @@
     <button onclick="alert('Button clicked!')">Click Me</button>
     <!--2. DOM Property Method-->
     <button id="mybutton">Leaning events</button>
-    <
+    <!--3. Using addEventListener (Preferred)-->
+    <button id="btn">Click me</button>
     <script>
         function ChnageText(id){
             id.innerHTML="oops";
@@ -29,10 +30,12 @@
             const button = document.getElementById("mybutton");
             button.onclick= function(){
                 alert("Button clicked");
-
             }
-    
-
+        //3. Using addEventListener (Preferred)
+        const newbutton = document.getElementById('btn');
+         newbutton.addEventListener('click', () => {
+            alert('Button clicked!');
+             });
     </script>
     <p id="e"></p>
 </body>
