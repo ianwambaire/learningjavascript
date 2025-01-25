@@ -38,6 +38,7 @@
              });
              
     </script>
+    <!--Using onmouseover and onmouseout-->
     <p id="hoverText">Hover over this text to highlight it!</p>
     <script>
       const text = document.getElementById("hoverText");
@@ -48,6 +49,34 @@
       text.onmouseout = function () {
         text.style.color = "black";
         text.style.fontWeight = "normal";
+      };
+    </script>
+    <!--Using onchange-->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="nameDisplay"></p>
+    <script>
+      const input = document.getElementById("nameInput");
+      const display = document.getElementById("nameDisplay");
+    
+      input.onchange = function () {
+        display.textContent = `Hello, ${input.value}!`;
+      };
+    </script>
+    <!--Toggle visibility-->
+    <button id="toggleButton">Hide Text</button>
+    <p id="toggleText">This text will be hidden or shown when you click the button.</p>
+    <script>
+      const button = document.getElementById("toggleButton");
+      const text = document.getElementById("toggleText");
+    
+      button.onclick = function () {
+        if (text.style.display === "none") {
+          text.style.display = "block";
+          button.textContent = "Hide Text";
+        } else {
+          text.style.display = "none";
+          button.textContent = "Show Text";
+        }
       };
     </script>
     <p id="e"></p>
