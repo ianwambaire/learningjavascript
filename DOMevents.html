@@ -15,6 +15,9 @@
     <button onclick="ShowDate()">CLICK to show Date:</button>
     <!--1. Inline HTML Event Handlers-->
     <button onclick="alert('Button clicked!')">Click Me</button>
+    <!--2. DOM Property Method-->
+    <button id="mybutton">Leaning events</button>
+    <
     <script>
         function ChnageText(id){
             id.innerHTML="oops";
@@ -22,6 +25,12 @@
         function ShowDate(){
             document.getElementById("e").innerHTML=Date();
         }
+        //2. DOM Property Method
+            const button = document.getElementById("mybutton");
+            button.onclick= function(){
+                alert("Button clicked");
+
+            }
     
 
     </script>
